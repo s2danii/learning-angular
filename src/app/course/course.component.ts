@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-course',
-  templateUrl: './course.component.html',
-  styleUrls: ['./course.component.sass']
+  selector: 'course',
+  template: `
+    {{ text | summary:10 }}
+  `
 })
-export class CourseComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class CourseComponent {
+  text = `lorem aslfalsdfa asflajs woirw klasdlfk jasie owier awei aoie adfnaldfk kajwoeir waor iawefn ale awoeu
+    
+  `
 }
+
+
